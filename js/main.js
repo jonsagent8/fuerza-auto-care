@@ -25,7 +25,7 @@ const CAL_CONFIG = {
   username: "YOUR-CAL-USERNAME",          // ← PASTE YOUR CAL.COM USERNAME
   origin: "https://cal.com",               // change only if self-hosting Cal.com
   embedScript: "https://app.cal.com/embed/embed.js",
-  brandColor: "#ff4a1c",
+  brandColor: "#e11d25",
   services: {
     "detailing":   { label: "Detailing",            slug: "detailing",          minutes: 240 },
     "window-tint": { label: "Window Tint",          slug: "window-tint",        minutes: 180 },
@@ -70,7 +70,7 @@ const CAL_CONFIG = {
       : `<stop offset="0" stop-color="#2a3442"/><stop offset=".5" stop-color="#0b0f15"/><stop offset="1" stop-color="#05070a"/>`;
     const rim = dirty ? "#4a4038" : "#2a2a30";
     const rimStroke = dirty ? "#5c5045" : "#6a6a72";
-    const accent = dirty ? "#7a4a38" : "#ff4a1c";
+    const accent = dirty ? "#7a4a38" : "#e11d25";
 
     const wheel = (cx) => `
       <g class="wheel">
@@ -542,7 +542,7 @@ const CAL_CONFIG = {
       });
 
       /* ---------- footer wordmark ---------- */
-      gsap.from(".footer__big", {
+      gsap.from(".footer__logo", {
         yPercent: 40, opacity: 0, ease: "power3.out", duration: 1.2,
         scrollTrigger: { trigger: ".footer", start: "top 90%", once: true },
       });
