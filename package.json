@@ -1,0 +1,15 @@
+{
+  "name": "fuerza-auto-care",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Marketing site for Fuerza Auto Care LLC — static, GitHub Pages ready.",
+  "scripts": {
+    "vendor": "node scripts/vendor.js",
+    "postinstall": "node scripts/vendor.js",
+    "dev": "npx --yes serve -l 5173 ."
+  },
+  "dependencies": {
+    "gsap": "^3.12.5",
+    "lenis": "^1.1.13"
+  }
+}

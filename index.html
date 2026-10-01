@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Fuerza Auto Care — Detailing, Tint, Wrap & PPF</title>
+  <meta name="description" content="Fuerza Auto Care LLC — premium auto detailing, ceramic window tint, vinyl wraps and paint protection film. One owner, every car. Book online." />
+  <meta name="theme-color" content="#0a0a0c" />
+  <!-- Flags JS as available before first paint so .reveal elements can start hidden without a flash -->
+  <script>document.documentElement.classList.add("js")</script>
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Lenis base styles (copied from node_modules by `npm run vendor`) -->
+  <link rel="stylesheet" href="vendor/lenis/lenis.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <a href="#top" class="nav__brand" data-scroll aria-label="Fuerza Auto Care home">
+      <span class="nav__mark">F</span>
+      <span class="nav__name">Fuerza <em>Auto Care</em></span>
+    </a>
+    <nav class="nav__links" id="nav-links" aria-label="Primary">
+      <a href="#services" data-scroll>Services</a>
+      <a href="#process" data-scroll>Process</a>
+      <a href="#gallery" data-scroll>Gallery</a>
+      <a href="#about" data-scroll>About</a>
+      <a href="#contact" data-scroll>Contact</a>
+    </nav>
+    <div class="nav__right">
+      <a href="#booking" class="btn btn--sm" data-scroll>Book now</a>
+      <button class="nav__toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="hero__glow hero__glow--a"></div>
+        <div class="hero__glow hero__glow--b"></div>
+        <div class="hero__grid"></div>
+      </div>
+
+      <div class="hero__inner">
+        <p class="eyebrow hero__eyebrow">Detailing · Tint · Wrap · PPF</p>
+        <h1 class="hero__title" aria-label="Clean is a standard. Shine is a statement.">
+          <span class="line" aria-hidden="true"><span class="split">Clean is</span></span>
+          <span class="line" aria-hidden="true"><span class="split">a standard.</span></span>
+          <span class="line" aria-hidden="true"><span class="split hero__accent">Shine is fuerza.</span></span>
+        </h1>
+        <p class="hero__sub">
+          One owner. One set of hands on every car. Showroom-grade detailing,
+          precision tint, wraps and paint protection — booked online in a minute.
+        </p>
+        <div class="hero__ctas">
+          <a href="#booking" class="btn" data-scroll>Book an appointment</a>
+          <a href="#services" class="btn btn--ghost" data-scroll>Explore services</a>
+        </div>
+      </div>
+
+      <!-- Hero vehicle: SVG injected by js/main.js (buildCar) — light sweep + water beading live here -->
+      <div class="hero__car car-stage" data-car="hero" aria-hidden="true"></div>
+      <div class="hero__floor" aria-hidden="true"></div>
+
+      <div class="hero__scroll" aria-hidden="true">
+        <span>Scroll</span>
+        <i></i>
+      </div>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Ceramic Coating</span><span>✦</span><span>Paint Correction</span><span>✦</span>
+        <span>Ceramic Window Tint</span><span>✦</span><span>Color-Change Wraps</span><span>✦</span>
+        <span>Self-Healing PPF</span><span>✦</span><span>Interior Restoration</span><span>✦</span>
+        <span>Ceramic Coating</span><span>✦</span><span>Paint Correction</span><span>✦</span>
+        <span>Ceramic Window Tint</span><span>✦</span><span>Color-Change Wraps</span><span>✦</span>
+        <span>Self-Healing PPF</span><span>✦</span><span>Interior Restoration</span><span>✦</span>
+      </div>
+    </div>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="section services" id="services">
+      <div class="section__head">
+        <p class="eyebrow reveal">What I do</p>
+        <h2 class="section__title reveal">Four disciplines.<br />One standard.</h2>
+      </div>
+
+      <div class="services__grid">
+        <!-- data-book matches a key in CAL_CONFIG.services (js/main.js) -->
+        <article class="card reveal">
+          <div class="card__top">
+            <span class="card__num">01</span>
+            <svg class="card__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c3 4 6 7.2 6 10.5A6 6 0 0 1 6 13.5C6 10.2 9 7 12 3Z"/></svg>
+          </div>
+          <h3 class="card__title">Detailing</h3>
+          <p class="card__desc">
+            Hand wash, decontamination, machine polish and interior deep clean.
+            Add a ceramic coating for years of gloss and easy upkeep.
+          </p>
+          <ul class="card__meta">
+            <li><span>Est. time</span><strong>2 – 4 hrs</strong></li>
+            <li><span>From</span><strong>$149</strong></li>
+          </ul>
+          <button class="card__cta" data-book="detailing">Book detailing <span>→</span></button>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__top">
+            <span class="card__num">02</span>
+            <svg class="card__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 18 8 6h12l-2 12Z"/><path d="M11 9l-2 6M15 9l-2 6"/></svg>
+          </div>
+          <h3 class="card__title">Window Tint</h3>
+          <p class="card__desc">
+            Computer-cut ceramic film that rejects heat and UV without killing
+            your signal. Clean edges, no bubbles.
+          </p>
+          <ul class="card__meta">
+            <li><span>Est. time</span><strong>2 – 3 hrs</strong></li>
+            <li><span>From</span><strong>$249</strong></li>
+          </ul>
+          <button class="card__cta" data-book="window-tint">Book tint <span>→</span></button>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__top">
+            <span class="card__num">03</span>
+            <svg class="card__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 15c3-6 6-6 9 0s6 6 9 0"/><path d="M3 9c3-6 6-6 9 0s6 6 9 0"/></svg>
+          </div>
+          <h3 class="card__title">Vinyl Wrap</h3>
+          <p class="card__desc">
+            Full or partial color change, chrome delete and accents in premium
+            cast vinyl. Fully reversible — and it protects the paint underneath.
+          </p>
+          <ul class="card__meta">
+            <li><span>Est. time</span><strong>3 – 5 days</strong></li>
+            <li><span>From</span><strong>$2,800</strong></li>
+          </ul>
+          <button class="card__cta" data-book="vinyl-wrap">Book wrap drop-off <span>→</span></button>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__top">
+            <span class="card__num">04</span>
+            <svg class="card__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4 6v6c0 4.5 3.4 8 8 9 4.6-1 8-4.5 8-9V6Z"/><path d="m9 12 2 2 4-4"/></svg>
+          </div>
+          <h3 class="card__title">Paint Protection Film</h3>
+          <p class="card__desc">
+            Clear, self-healing urethane that stops rock chips and scratches.
+            Front-end, track pack or full-body coverage.
+          </p>
+          <ul class="card__meta">
+            <li><span>Est. time</span><strong>1 – 3 days</strong></li>
+            <li><span>From</span><strong>$1,200</strong></li>
+          </ul>
+          <button class="card__cta" data-book="ppf">Book PPF drop-off <span>→</span></button>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ PROCESS — dirty-to-clean scroll reveal ============ -->
+    <section class="process" id="process">
+      <div class="process__pin">
+        <div class="process__head">
+          <p class="eyebrow">The process</p>
+          <h2 class="section__title">From road grime<br />to <span class="hl">mirror finish.</span></h2>
+        </div>
+
+        <div class="process__stage">
+          <!-- Two copies of the car: clean underneath, dirty on top. Scroll wipes the dirty layer away. -->
+          <div class="process__clean car-stage" data-car="clean" aria-hidden="true"></div>
+          <div class="process__dirty car-stage" data-car="dirty" aria-hidden="true"></div>
+          <div class="squeegee" aria-hidden="true"><i></i></div>
+        </div>
+
+        <ol class="process__steps">
+          <li><b>01</b> Foam &amp; hand wash</li>
+          <li><b>02</b> Decontaminate</li>
+          <li><b>03</b> Correct &amp; polish</li>
+          <li><b>04</b> Protect</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ GALLERY / BEFORE-AFTER ============ -->
+    <section class="section gallery" id="gallery">
+      <div class="section__head">
+        <p class="eyebrow reveal">Results</p>
+        <h2 class="section__title reveal">Drag to see the difference.</h2>
+      </div>
+
+      <!--
+        BEFORE / AFTER SLIDERS
+        Drop your photos into assets/img/ and uncomment the background-image on
+        each .ba__img (before = dirty/dull, after = finished). Remove the
+        "ph ph--…" classes once real photos are in.
+      -->
+      <div class="ba-grid">
+        <figure class="ba reveal" data-ba>
+          <div class="ba__img ph ph--after-1"
+               style="/* background-image: url('assets/img/after-1.jpg') */"></div>
+          <div class="ba__img ba__img--before ph ph--before-1"
+               style="/* background-image: url('assets/img/before-1.jpg') */"></div>
+          <div class="ba__handle"><span></span></div>
+          <input class="ba__range" type="range" min="0" max="100" value="50" aria-label="Before and after: paint correction" />
+          <span class="ba__tag ba__tag--l">Before</span>
+          <span class="ba__tag ba__tag--r">After</span>
+          <figcaption>Paint correction + ceramic coating</figcaption>
+        </figure>
+
+        <figure class="ba reveal" data-ba>
+          <div class="ba__img ph ph--after-2"
+               style="/* background-image: url('assets/img/after-2.jpg') */"></div>
+          <div class="ba__img ba__img--before ph ph--before-2"
+               style="/* background-image: url('assets/img/before-2.jpg') */"></div>
+          <div class="ba__handle"><span></span></div>
+          <input class="ba__range" type="range" min="0" max="100" value="50" aria-label="Before and after: color-change wrap" />
+          <span class="ba__tag ba__tag--l">Before</span>
+          <span class="ba__tag ba__tag--r">After</span>
+          <figcaption>Satin color-change wrap</figcaption>
+        </figure>
+      </div>
+
+      <!-- Gallery strip — replace each .ph div with <img src="assets/img/…" alt="…" loading="lazy"> -->
+      <div class="strip">
+        <div class="strip__item ph ph--s1 reveal"><span>Ceramic tint · 35%</span></div>
+        <div class="strip__item ph ph--s2 reveal"><span>Full-front PPF</span></div>
+        <div class="strip__item ph ph--s3 reveal"><span>Interior restoration</span></div>
+        <div class="strip__item ph ph--s4 reveal"><span>Gloss black chrome delete</span></div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section about" id="about">
+      <div class="about__grid">
+        <div>
+          <p class="eyebrow reveal">About</p>
+          <h2 class="section__title reveal">No crew.<br />No shortcuts.</h2>
+        </div>
+        <div class="about__body">
+          <!-- Swap in the owner's name and story -->
+          <p class="reveal">
+            Fuerza Auto Care is me — one person, one bay, and an unreasonable
+            obsession with paint. I started out detailing friends' cars on
+            weekends and turned it into a full-time craft.
+          </p>
+          <p class="reveal">
+            Because I'm solo, the person you book with is the person who works on
+            your car. Every vehicle gets an inspection under color-matched light,
+            a clear plan before I start, and a walk-around when I hand back the keys.
+          </p>
+          <div class="stats">
+            <div class="stat reveal"><strong data-count="600" data-suffix="+">0</strong><span>Cars finished</span></div>
+            <div class="stat reveal"><strong data-count="6">0</strong><span>Years in the craft</span></div>
+            <div class="stat reveal"><strong data-count="5" data-suffix="★">0</strong><span>Avg. rating</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BOOKING (Cal.com) ============ -->
+    <section class="section booking" id="booking">
+      <div class="section__head">
+        <p class="eyebrow reveal">Booking</p>
+        <h2 class="section__title reveal">Pick a service.<br />Pick a time.</h2>
+        <p class="section__lede reveal">
+          Each service has its own calendar with the right slot length, so you only see times that actually fit.
+        </p>
+      </div>
+
+      <div class="booking__tabs reveal" role="tablist" aria-label="Choose a service">
+        <button role="tab" class="tab is-active" data-tab="detailing" aria-selected="true">Detailing</button>
+        <button role="tab" class="tab" data-tab="window-tint" aria-selected="false">Window Tint</button>
+        <button role="tab" class="tab" data-tab="vinyl-wrap" aria-selected="false">Vinyl Wrap</button>
+        <button role="tab" class="tab" data-tab="ppf" aria-selected="false">PPF</button>
+      </div>
+
+      <!--
+        ================================================================
+        CAL.COM EMBED TARGET
+        ----------------------------------------------------------------
+        The live Cal.com calendar renders inside #cal-embed.
+        Configure it in js/main.js → CAL_CONFIG
+        (search for "PASTE YOUR CAL.COM").
+        Until a real username is set, the placeholder panel is shown.
+        data-lenis-prevent lets the calendar scroll on its own.
+        ================================================================
+      -->
+      <div class="booking__frame reveal" data-lenis-prevent>
+        <div id="cal-embed" class="cal-embed"></div>
+        <div class="cal-placeholder" id="cal-placeholder">
+          <p class="eyebrow">Cal.com placeholder</p>
+          <h3>Your booking calendar goes here</h3>
+          <p>
+            Set your Cal.com username in <code>js/main.js</code> → <code>CAL_CONFIG</code>
+            and this panel becomes the live calendar for the selected service.
+          </p>
+          <p class="cal-placeholder__svc">Selected: <strong id="cal-selected">Detailing</strong> · <span id="cal-duration">240 min</span></p>
+        </div>
+      </div>
+      <p class="booking__alt">
+        Prefer a full page?
+        <!-- This href is generated from CAL_CONFIG.username — no need to edit here -->
+        <a id="cal-link" href="https://cal.com/" target="_blank" rel="noopener">Open booking on Cal.com ↗</a>
+      </p>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact" id="contact">
+      <div class="contact__grid">
+        <div>
+          <p class="eyebrow reveal">Contact</p>
+          <h2 class="section__title reveal">Questions first?<br />Text me.</h2>
+        </div>
+        <!-- Replace with real phone / email / address / hours -->
+        <div class="contact__list">
+          <a class="contact__row reveal" href="sms:+15555550123"><span>Text / Call</span><strong>(555) 555-0123</strong></a>
+          <a class="contact__row reveal" href="mailto:hello@fuerzaautocare.com"><span>Email</span><strong>hello@fuerzaautocare.com</strong></a>
+          <a class="contact__row reveal" href="https://maps.google.com/?q=Your+City" target="_blank" rel="noopener"><span>Area</span><strong>Shop &amp; mobile · Your City</strong></a>
+          <div class="contact__row reveal"><span>Hours</span><strong>By appointment · Mon–Sat</strong></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer__big" aria-hidden="true">FUERZA</div>
+    <div class="footer__row">
+      <span>© <span id="year"></span> Fuerza Auto Care LLC</span>
+      <nav aria-label="Social">
+        <a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://tiktok.com/" target="_blank" rel="noopener">TikTok</a>
+        <a href="https://google.com/maps" target="_blank" rel="noopener">Reviews</a>
+      </nav>
+      <a href="#top" data-scroll>Back to top ↑</a>
+    </div>
+  </footer>
+
+  <!-- GSAP + ScrollTrigger + Lenis — installed via npm, copied to /vendor by `npm run vendor` -->
+  <script src="vendor/gsap/gsap.min.js"></script>
+  <script src="vendor/gsap/ScrollTrigger.min.js"></script>
+  <script src="vendor/lenis/lenis.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
